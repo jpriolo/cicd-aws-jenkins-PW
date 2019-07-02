@@ -1,0 +1,23 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "hello-world",
+            "image": "<IMAGE1_NAME>",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "10",
+    "memory": "256",
+    "family": "hello-world"
+}
